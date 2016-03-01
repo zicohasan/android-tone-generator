@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     int tone;
     TonesAdapter tones;
     ListView list;
+    ToneGenerator generator = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                tone = position;
                 load(position);
             }
         });
@@ -73,8 +75,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void play() {
-        ToneGenerator t = new ToneGenerator(AudioManager.STREAM_MUSIC, 100);
-        t.startTone(tone, 1000);
+        generator.startTone(tone, 1000);
     }
 
     void load(int i) {
