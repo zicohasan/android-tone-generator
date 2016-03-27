@@ -1,6 +1,6 @@
 # Tone Generator
 
-Android ToneGenerator preview app!
+Android ToneGenerator class preview app!
 
   * http://developer.android.com/intl/ru/reference/android/media/ToneGenerator.html
 
