@@ -70,7 +70,7 @@
             </LinearLayout>
         </LinearLayout>
 
-        <com.github.axet.tonegenerator.EqualLinearLayout
+        <com.github.axet.androidlibrary.widgets.EqualLinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -108,7 +108,7 @@
                 android:text="Next"
                 android:textColor="@android:color/white"
                 android:textStyle="bold" />
-        </com.github.axet.tonegenerator.EqualLinearLayout>
+        </com.github.axet.androidlibrary.widgets.EqualLinearLayout>
 
         <ListView
             android:id="@+id/list"
