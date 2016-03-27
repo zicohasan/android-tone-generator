@@ -15,7 +15,6 @@ import android.widget.TextView;
 import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
-
     int tone;
     TonesAdapter tones;
     ListView list;
